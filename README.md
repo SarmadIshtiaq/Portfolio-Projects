@@ -10,9 +10,9 @@ The objective is to demonstrate how organisations can identify and assess risks,
 
 | # | Project | Main Focus | Status |
 |---|---|---|---|
-| 1 | [Cybersecurity Risk Register](projects/01-cybersecurity-risk-register/) | Identify, assess, document, and communicate cybersecurity risks | Planned |
-| 2 | [AI Use-Case Review](projects/02-ai-use-case-review/) | Assess an AI-enabled SaaS use case and prepare a governance decision | Planned |
-| 3 | [Third-Party Vendor Risk Assessment](projects/03-third-party-vendor-risk-assessment/) | Assess a technology vendor, review evidence, and support a renewal decision | Planned |
+| 1 | [Cybersecurity Risk Register](projects/01-cybersecurity-risk-register/) | Identify, assess, document, and communicate cybersecurity risks | Completed |
+| 2 | [AI Use-Case Review](projects/02-ai-use-case-review/) | Assess an AI-enabled SaaS use case and prepare a governance decision | Completed |
+| 3 | [Third-Party Vendor Risk Assessment](projects/03-third-party-vendor-risk-assessment/) | Assess a technology vendor, review evidence, and support a renewal decision | Completed |
 
 The three projects are based on fictional training scenarios involving Avenloft Systems Group. They are independent portfolio simulations, not real client engagements.
 
