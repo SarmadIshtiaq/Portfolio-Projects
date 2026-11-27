@@ -253,4 +253,4 @@ Screenshots, configuration evidence, assessment results and reports will be publ
 
 ## Contact
 
-For GRC, cybersecurity governance, AI governance, research and collaboration opportunities, please connect through my LinkedIn profile.
+For GRC, cybersecurity governance, AI governance, research and collaboration opportunities, please connect through my LinkedIn profile: www.linkedin.com/in/sarmad-ishtiaq.
