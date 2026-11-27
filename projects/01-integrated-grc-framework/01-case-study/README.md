@@ -1,3 +1,4 @@
+
 # Uber 2016 Data Breach — Case Study
 
 **Portfolio:** Integrated GRC Framework Design & Implementation
@@ -30,14 +31,21 @@ This is an independent portfolio research project. It is not an audit of Uber.
 
 This study covers:
 
-- Access to Uber's private GitHub repository.
-- Use of stolen credentials.
-- Exposure of an AWS access key.
-- Access to Amazon S3 data.
-- Exposure of personal information.
-- Incident discovery and response.
-- Delayed disclosure.
-- Regulatory and legal outcomes.
+- Access to Uber's private GitHub repository using stolen credentials. ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
+
+- Exposure of an AWS access key in source code stored in the private repository. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+
+- Access to Uber's Amazon S3 datastore using the AWS key. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+
+- Download of personal information from Amazon S3. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+
+- Incident discovery and response. ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
+
+- Payment to the attackers. ([DOJ Conviction Announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-convicted-federal-charges-covering-data-breach))
+
+- Delayed disclosure to affected consumers and regulators. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+
+- Regulatory and legal outcomes. ([FTC Settlement Announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber)) ([DOJ Non-Prosecution Agreement](https://www.justice.gov/usao-ndca/pr/uber-enters-non-prosecution-agreement))
 
 The study uses public information only.
 
@@ -45,9 +53,11 @@ It does not claim access to Uber's internal systems, policies, or records.
 
 ## 3. Organisation Background
 
-Uber Technologies, Inc. operates a technology platform that connects consumers with independent drivers for ridesharing and delivery services. [Source: [DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf)]
+Uber Technologies, Inc. operates a technology platform that connects consumers with independent drivers for ridesharing and delivery services. ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
 
-Uber collects personal information from riders and drivers. This information includes names, email addresses, phone numbers, and driver's licence information. [Source: [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)]
+Uber collects personal information from riders and drivers. This information includes names, email addresses, phone numbers, and driver's licence information. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+
+Uber used Amazon S3 to store files that contained personal information. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
 ## 4. Incident Summary
 
@@ -55,15 +65,17 @@ In October and November 2016, attackers accessed Uber's private GitHub repositor
 
 They used stolen credentials to gain access. They found an AWS access key in the source code.
 
-They used this key to access Uber's Amazon S3 datastore and copy personal information. [Sources: [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) | [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf)]
+They used this key to access Uber's Amazon S3 datastore and download personal information. ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
 
-The FTC complaint reports that the attackers downloaded 16 files between 13 October and 15 November 2016. [Source: [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)]
+The FTC complaint reports that the attackers downloaded 16 files between 13 October and 15 November 2016. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
-Uber learned about the breach on or about 14 November 2016.
+Uber learned about the breach on or about 14 November 2016. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
-Uber paid the attackers $100,000 through its bug bounty program in December 2016. [Source: [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf)]
+Uber paid the attackers $100,000 in Bitcoin in December 2016. ([DOJ Conviction Announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-convicted-federal-charges-covering-data-breach))
 
-Uber notified affected consumers on 21 November 2017, more than one year after discovery. [Source: [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)]
+Uber notified affected consumers on 21 November 2017, more than one year after discovery. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+
+**Incident distinction:** The 2014 Uber breach was a separate incident. In 2014, an AWS key was posted to a public GitHub repository. In 2016, attackers used stolen credentials to access a private GitHub repository. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)) ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
 
 ## 5. Verified Incident Timeline
 
@@ -71,7 +83,7 @@ Uber notified affected consumers on 21 November 2017, more than one year after d
 |---|---|---|
 | 13 October–15 November 2016 | Attackers downloaded 16 files from Amazon S3. | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
 | 14 November 2016 | Uber learned about the breach after an attacker contacted the company. | [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
-| December 2016 | Uber paid the attackers $100,000 in Bitcoin. | [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
+| December 2016 | Uber paid the attackers $100,000 in Bitcoin. | [DOJ Conviction Announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-convicted-federal-charges-covering-data-breach) |
 | January 2017 | Uber identified the two attackers. | [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
 | 21 November 2017 | Uber notified affected consumers. | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
 | 26 October 2018 | The FTC approved a revised settlement with Uber. | [FTC Announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber) |
@@ -81,23 +93,19 @@ Uber notified affected consumers on 21 November 2017, more than one year after d
 
 ## 6. Documented Technical Findings
 
-The official records describe the following technical issues:
+The FTC complaint describes the following security weaknesses:
 
-1. Attackers used credentials that had been exposed in earlier data breaches.
-2. Uber did not require MFA for access to its GitHub repositories, according to the FTC complaint.
-3. The attackers found an AWS access key in plain-text source code.
-4. They used the key to access Amazon S3.
-5. The downloaded files contained unencrypted personal information.
+1. Uber did not have a policy that prohibited engineers from reusing credentials. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
-Source: [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)
+2. Uber did not require engineers to enable MFA when they accessed its GitHub repositories. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
-The DOJ agreement also records the actions taken after discovery.
+3. The attackers found an AWS access key in plain-text source code. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
-Uber's security team closed the attackers' access point, started password resets, enabled two-factor authentication for GitHub accounts, and rotated AWS service keys.
+4. The attackers used the AWS key to access Amazon S3 and download files that contained unencrypted personal information. ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
 
-Source: [DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf)
+The DOJ agreement records the response actions taken after discovery. Uber's security team closed the attackers' access point, started password resets, enabled two-factor authentication for GitHub accounts, and rotated AWS service keys. ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
 
-**Important:** The security weaknesses above are described in the FTC complaint. They must be identified as allegations in that complaint.
+**Important:** The security weaknesses in the FTC complaint are allegations in that complaint. The response actions above are recorded in the DOJ agreement's Statement of Facts, which Uber accepted.
 
 ## 7. Exposed Information
 
@@ -109,7 +117,7 @@ The FTC complaint reported these data categories:
 | Names and mobile phone numbers | Approximately 22.1 million | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
 | Names and driver's licence numbers | Approximately 607,000 | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
 
-The DOJ later reported approximately 57 million user records and 600,000 driver's licence numbers. [Source: [DOJ Announcement](https://www.justice.gov/usao-ndca/pr/uber-enters-non-prosecution-agreement)]
+The DOJ reported approximately 57 million user records and 600,000 driver's licence numbers. ([DOJ Non-Prosecution Agreement Announcement](https://www.justice.gov/usao-ndca/pr/uber-enters-non-prosecution-agreement))
 
 These figures use different reporting descriptions. The FTC category counts must not be added to calculate the number of unique affected people.
 
@@ -117,47 +125,45 @@ These figures use different reporting descriptions. The FTC category counts must
 
 The incident raises important governance questions:
 
-- Who owns access to source-code repositories?
-- Who approves and monitors access to cloud credentials?
-- Who is responsible for incident escalation?
-- Who approves communication with regulators?
-- How does senior management monitor security and privacy risks?
+- Who owns access to source-code repositories? ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+- Who approves and monitors access to cloud credentials? ([FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf))
+- Who is responsible for incident escalation and response? ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
+- Who approves communication with regulators? ([DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf))
+- How does senior management monitor security and privacy risks? ([FTC Settlement Announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber))
 
-These are independent governance questions. They are not claims about Uber's current internal governance structure.
+These are questions for independent GRC analysis. They are not claims about Uber's current internal governance structure.
 
 ## 9. Risk Implications
 
-The incident provides examples of risks that an organisation should assess.
+The following risk scenarios are based on the documented incident:
 
-| Risk area | Potential consequence |
-|---|---|
-| Credential compromise | Unauthorised system access |
-| Exposed cloud keys | Unauthorised cloud data access |
-| Weak access controls | Unauthorised access to sensitive information |
-| Unencrypted data | Exposure of readable personal information |
-| Delayed incident disclosure | Regulatory and legal consequences |
-| Weak incident oversight | Poor accountability and incident response |
+| Risk area | Potential consequence | Evidence |
+|---|---|---|
+| Credential compromise | Unauthorised repository access | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Exposed cloud keys | Unauthorised cloud data access | [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
+| Weak access controls | Unauthorised access to sensitive information | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Unencrypted data | Exposure of readable personal information | [FTC Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Delayed disclosure | Regulatory and legal consequences | [FTC Settlement Announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber) |
+| Weak incident oversight | Poor accountability and incident response | [DOJ Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
 
-These are proposed risk scenarios based on the documented incident. They are not a verified assessment of Uber's current risk position.
+These are proposed risk scenarios. They are not a verified assessment of Uber's current risk position.
 
 ## 10. Compliance Implications and Proposed GRC Responses
 
-The incident raises questions about privacy obligations, security controls, incident response, and regulatory reporting.
+The incident provides a basis for the following proposed GRC controls:
 
-For this portfolio, the proposed GRC framework will examine the following controls:
+| Area | Proposed GRC response | Evidence or regulatory context |
+|---|---|---|
+| Identity and access management | Define access rules and require MFA. | [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Credential management | Establish credential reuse and rotation requirements. | [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Secrets management | Prevent access keys from being stored in source code. | [DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
+| Cloud security | Restrict and monitor access to cloud storage. | [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Data protection | Define encryption and data classification controls. | [FTC Revised Complaint](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf) |
+| Incident response | Establish escalation, investigation, and response procedures. | [DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
+| Compliance monitoring | Assign control owners and retain evidence. | [FTC Settlement Announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber) |
+| Management oversight | Report significant risks and incidents to management. | [DOJ Non-Prosecution Agreement](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf) |
 
-| Area | Proposed GRC response |
-|---|---|
-| Identity and access management | Define access rules and require MFA. |
-| Credential management | Establish credential reuse and rotation requirements. |
-| Secrets management | Prevent access keys from being stored in source code. |
-| Cloud security | Restrict and monitor access to cloud storage. |
-| Data protection | Define encryption and data classification controls. |
-| Incident response | Establish escalation, investigation, and response procedures. |
-| Compliance monitoring | Assign control owners and retain evidence. |
-| Management oversight | Report significant risks and incidents to management. |
-
-These are proposed controls for an independent GRC framework. They are not controls that we claim to have implemented at Uber.
+These are proposed controls for this portfolio. They are not controls that we claim to have implemented at Uber.
 
 ## 11. Limitations
 
@@ -173,83 +179,23 @@ The project does not represent:
 - An assessment of Uber's current security posture.
 - An implementation of controls inside Uber.
 
-The study will not make claims that public evidence cannot support.
+The study does not make claims that public evidence cannot support.
 
 ## 12. Official References
 
-### S1 — FTC Revised Complaint
+- **FTC Revised Complaint (October 2018):** [Open the official complaint PDF](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)
 
-**Organisation:** U.S. Federal Trade Commission
+- **DOJ Executed Non-Prosecution Agreement (July 2022):** [Open the official agreement PDF](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf)
 
-**Date:** October 2018
+- **DOJ Non-Prosecution Agreement Announcement (22 July 2022):** [Open the official DOJ announcement](https://www.justice.gov/usao-ndca/pr/uber-enters-non-prosecution-agreement)
 
-**Purpose:** GitHub access, credential reuse, MFA, AWS access key, Amazon S3 access, exposed data, and consumer notification.
+- **FTC Settlement Announcement (26 October 2018):** [Open the official FTC announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber)
 
-[Open the official FTC Revised Complaint (PDF)](https://www.ftc.gov/system/files/documents/cases/152_3054_c-4662_uber_technologies_revised_complaint.pdf)
+- **DOJ Former Chief Security Officer Conviction (5 October 2022):** [Open the official DOJ announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-convicted-federal-charges-covering-data-breach)
 
-### S2 — DOJ Executed Non-Prosecution Agreement
+- **DOJ Former Chief Security Officer Sentencing (5 May 2023):** [Open the official DOJ announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-sentenced-three-years-probation-covering-data)
 
-**Organisation:** U.S. Department of Justice
-
-**Date:** 22 July 2022
-
-**Purpose:** Attack path, company admissions, response actions, payment, and disclosure.
-
-[Open the official DOJ Agreement (PDF)](https://www.justice.gov/d9/press-releases/attachments/2022/07/22/executed_uber_npa.pdf)
-
-### S3 — DOJ Non-Prosecution Agreement Announcement
-
-**Organisation:** U.S. Department of Justice
-
-**Date:** 22 July 2022
-
-**Purpose:** Uber's admissions, approximate data exposure, and delayed disclosure.
-
-[Open the official DOJ Announcement](https://www.justice.gov/usao-ndca/pr/uber-enters-non-prosecution-agreement)
-
-### S4 — FTC Settlement Announcement
-
-**Organisation:** U.S. Federal Trade Commission
-
-**Date:** 26 October 2018
-
-**Purpose:** Regulatory action, privacy program, and independent assessments.
-
-[Open the official FTC Announcement](https://www.ftc.gov/news-events/news/press-releases/2018/10/federal-trade-commission-gives-final-approval-settlement-uber)
-
-### S5 — Former Chief Security Officer Conviction
-
-**Organisation:** U.S. Department of Justice
-
-**Date:** 5 October 2022
-
-**Purpose:** Trial outcome and individual accountability.
-
-[Open the official DOJ Announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-convicted-federal-charges-covering-data-breach)
-
-### S6 — Former Chief Security Officer Sentencing
-
-**Organisation:** U.S. Department of Justice
-
-**Date:** 5 May 2023
-
-**Purpose:** Final sentence and fine.
-
-[Open the official DOJ Announcement](https://www.justice.gov/usao-ndca/pr/former-chief-security-officer-uber-sentenced-three-years-probation-covering-data)
-
-### S7 — ASD-STE100 Issue 9
-
-**Organisation:** ASD Simplified Technical English Maintenance Group
-
-**Issue:** 9
-
-**Date:** 15 January 2025
-
-**Purpose:** Technical writing rules and controlled vocabulary.
-
-[Open the official ASD-STE100 website](https://www.asd-ste100.org/)
-
-[Open the official ASD-STE100 Issue 9 PDF](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf)
+- **ASD-STE100 Issue 9:** [Open the official ASD-STE100 website](https://www.asd-ste100.org/)
 
 ---
 
