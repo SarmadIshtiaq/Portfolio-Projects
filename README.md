@@ -1,256 +1,295 @@
-# AI Governance and GRC Portfolio
+# GRC, Cybersecurity Risk & AI Governance Portfolio
 
-A Computer Science graduate from the **University of the Punjab**, focused on Governance, Risk and Compliance (GRC), AI governance, cybersecurity risk management, and data governance.
+A Computer Science graduate from the **University of the Punjab**, building practical skills in Governance, Risk and Compliance (GRC), cybersecurity risk management, AI governance, and third-party risk management.
 
-This repository documents my independent, hands-on portfolio projects in GRC and emerging technology governance. The projects explore real-world cybersecurity incidents, publicly available regulatory requirements, practical GRC methodologies, and implementation using accessible tools.
+This repository documents my independent portfolio projects and research. It focuses on practical GRC work, recognised frameworks, structured assessments, evidence-based analysis, and clear reporting.
 
-My objective is to demonstrate how organisations can establish governance structures, identify and manage risks, assess compliance obligations, and monitor controls through structured GRC processes.
+The objective is to demonstrate how organisations can identify and assess risks, evaluate AI use cases, assess third-party suppliers, document findings, and support management decisions.
 
-## Project Approach
+## Portfolio Overview
 
-The portfolio uses publicly documented cybersecurity incidents and official regulatory sources as the basis for its case studies.
+| # | Project | Main Focus | Status |
+|---|---|---|---|
+| 1 | [Cybersecurity Risk Register](projects/01-cybersecurity-risk-register/) | Identify, assess, document, and communicate cybersecurity risks | Planned |
+| 2 | [AI Use-Case Review](projects/02-ai-use-case-review/) | Assess an AI-enabled SaaS use case and prepare a governance decision | Planned |
+| 3 | [Third-Party Vendor Risk Assessment](projects/03-third-party-vendor-risk-assessment/) | Assess a technology vendor, review evidence, and support a renewal decision | Planned |
 
-- No confidential company information is used.
-- No access to internal organisational systems or records is claimed.
-- Case studies analyse publicly available evidence and develop proposed GRC solutions.
-- Proposed frameworks and recommendations are independent portfolio work, not verified implementations within the referenced organisations.
-- Regulatory applicability is assessed carefully rather than assumed.
+The three projects are based on fictional training scenarios involving Avenloft Systems Group. They are independent portfolio simulations, not real client engagements.
 
-All three projects will use **Eramba Community Edition** as the primary GRC platform where its available features support the required workflows. **Google Sheets** will support structured assessments and analysis, while **Microsoft Power BI Desktop** will be used for management-level dashboards.
+---
 
-## Projects
+## Project 01 — Cybersecurity Risk Register
 
-| # | Project | Focus | Primary Tools | Status |
-|---|---|---|---|---|
-| 1 | Integrated GRC Framework Design & Implementation | Governance structure, enterprise risk management, policy management, control ownership, compliance monitoring and GRC reporting | Eramba Community Edition, Google Sheets, Power BI Desktop, draw.io | Planned |
-| 2 | Saudi Regulatory Compliance & Control Mapping | Regulatory research, applicability assessment, NCA ECC, Saudi PDPL, control mapping, evidence management and gap assessment | Eramba Community Edition, Google Sheets, Power BI Desktop | Planned |
-| 3 | Third-Party Risk Management & Supply-Chain Security | Vendor inventory, due diligence, supplier risk assessment, risk treatment, contractual security requirements and continuous monitoring | Eramba Community Edition, Google Sheets, Power BI Desktop | Planned |
+**Case organisation:** Avenloft Systems Group  
+**Case material:** [Avenloft Cybersecurity Risk Register Case Packet](https://www.lablist.io/downloads/avenloft-risk-register-case.pdf)
 
-## Project 01 — Integrated GRC Framework Design & Implementation
+### Objective
 
-**Case study reference:** Uber 2016 data breach.
+Develop a structured cybersecurity risk register for the fictional organisation. Identify relevant risk scenarios, assess their likelihood and impact, and communicate the most important risks to management.
 
-This project examines publicly documented weaknesses and governance challenges associated with the Uber 2016 data breach.
+### Scope
 
-The objective is to design a proposed integrated Governance, Risk and Compliance framework demonstrating how an organisation can connect:
+- Review the case packet and identify relevant organisational assets, activities, threats, and weaknesses.
+- Develop 8–12 cybersecurity risk scenarios.
+- Describe each risk using a clear cause–event–impact structure.
+- Assess likelihood and impact using a qualitative approach.
+- Apply the qualitative risk-level matrix in Appendix I, Table I-2 of [NIST SP 800-30 Rev. 1 — Guide for Conducting Risk Assessments](https://csrc.nist.gov/pubs/sp/800/30/r1/final).
+- Use the ratings Very Low, Low, Moderate, High, and Very High.
+- Document existing controls, proposed responses, risk ownership, and treatment actions where supported by the case material.
+- Prepare a one-page executive summary.
 
-- Corporate governance and accountability
-- Risk identification, assessment and treatment
-- Policy and control management
-- Access and information security governance
-- Incident escalation and reporting
-- Compliance monitoring
-- Corrective action management
-- GRC performance measurement through KPIs and KRIs
+The assessment will use the qualitative method described in NIST SP 800-30 Rev. 1. It will not present an invented numerical scoring formula as a NIST requirement.
 
-**Expected deliverables:**
+### Deliverables
 
-- GRC operating model
-- Governance structure and RACI matrix
-- Risk management methodology and risk register
-- Risk treatment plan
-- Policy and control ownership register
-- Compliance and evidence registers
-- Corrective action tracker
-- GRC implementation roadmap
-- Eramba platform configuration evidence
-- Google Sheets assessment workbooks
-- Power BI management dashboard
-- Final GRC assessment and recommendations report
+1. Cybersecurity Risk Register.
+2. One-page Executive Risk Summary.
 
-The case study will distinguish documented incident facts from independent analysis and proposed recommendations.
+### Supporting References
 
-## Project 02 — Saudi Regulatory Compliance & Control Mapping
+- [NIST SP 800-30 Rev. 1 — Guide for Conducting Risk Assessments](https://csrc.nist.gov/pubs/sp/800/30/r1/final).
+- [NIST IR 8286 Rev. 1 — Integrating Cybersecurity and Enterprise Risk Management](https://csrc.nist.gov/pubs/ir/8286/r1/final).
+- [NIST IR 8286A Rev. 1 — Identifying and Estimating Cybersecurity Risk for Enterprise Risk Management](https://csrc.nist.gov/pubs/ir/8286/a/r1/final).
 
-**Reference:** Official Saudi regulatory and cybersecurity requirements.
+These references will support the assessment methodology and the relationship between cybersecurity risk information and enterprise risk management.
 
-This project focuses on understanding regulatory obligations and developing a structured compliance assessment and control-mapping approach for the Saudi regulatory environment.
+**Status: Planned**
 
-**Areas of study:**
+---
 
-- National Cybersecurity Authority (NCA) Essential Cybersecurity Controls (ECC)
-- Saudi Personal Data Protection Law (PDPL)
-- Relevant sector-specific regulatory requirements
-- ISO/IEC 27001
-- NIST Cybersecurity Framework
+## Project 02 — AI Use-Case Review
 
-**Expected deliverables:**
+**Case organisation:** Avenloft Systems Group  
+**Use case:** An AI-enabled SaaS tool for summarising customer support calls and tickets in the Customer Success function.  
+**Case material:** [Avenloft AI Use-Case Review Case Packet](https://www.lablist.io/downloads/avenloft-ai-use-case-review.pdf)
 
-- Regulatory source register
-- Regulatory applicability assessment methodology
-- Requirements register
-- Requirements-to-control mapping
-- Control assessment methodology
-- Compliance evidence register
-- Gap assessment
-- Corrective action plan
-- Compliance monitoring dashboard
-- Eramba platform configuration evidence
-- Google Sheets assessment workbooks
-- Final regulatory compliance report
+### Objective
 
-Regulatory requirements will be interpreted using their official sources. Mandatory, conditional, recommended and voluntary requirements will be distinguished.
+Evaluate a proposed AI use case before the organisation adopts the service. Assess its business purpose, relevant risks, governance requirements, and conditions for a responsible adoption decision.
 
-## Project 03 — Third-Party Risk Management & Supply-Chain Security
+### Scope
 
-**Case study reference:** SolarWinds supply-chain compromise.
+- Document the business purpose and intended use of the AI tool.
+- Identify users, affected stakeholders, and relevant business processes.
+- Document the data used by the tool and its expected outputs.
+- Identify potential privacy, confidentiality, security, accuracy, human oversight, and vendor dependency risks.
+- Assess relevant risks associated with the AI use case.
+- Identify governance responsibilities and proposed safeguards.
+- Prepare a documented recommendation for management.
 
-This project examines the publicly documented SolarWinds incident to understand how third-party relationships and software supply chains can introduce cybersecurity risks.
+The assessment will use the four functions of the [NIST AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework): Govern, Map, Measure, and Manage.
 
-**Areas of focus:**
+The [NIST AI 600-1 — Generative Artificial Intelligence Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) will also be considered where the tool's functionality includes generative AI.
 
-- Third-party risk management methodology
-- Vendor inventory and criticality classification
-- Supplier due diligence
-- Vendor security questionnaires
-- Inherent and residual risk assessment
-- Risk treatment and acceptance
-- Contractual security requirements
-- Supplier monitoring and periodic reviews
-- Third-party risk reporting
+### Deliverables
 
-**Expected deliverables:**
+1. AI Use-Case Inventory.
+2. AI Risk Assessment.
+3. AI Governance Decision Memo.
 
-- Third-party risk management policy
-- Vendor inventory
-- Vendor criticality assessment
-- Due diligence questionnaire
-- Vendor risk register
-- Risk treatment plans
-- Supplier security assessment methodology
-- Monitoring and review procedure
-- Eramba platform configuration evidence
-- Google Sheets vendor assessment workbook
-- Power BI vendor risk dashboard
-- Final third-party risk assessment report
+The decision memo will document the assessment, identified risks, recommended safeguards, and proposed adoption conditions. It will not imply that the organisation has deployed the AI tool.
 
-## Platforms and Tools
+**Status: Planned**
 
-| Tool | Purpose |
+---
+
+## Project 03 — Third-Party Vendor Risk Assessment
+
+**Case organisation:** Avenloft Systems Group  
+**Fictional vendor:** CobaltCedar Analytics  
+**Vendor product:** SupportLens  
+**Scenario:** Vendor assessment and renewal review.  
+**Case material:** [Avenloft Third-Party Risk Review Case Packet](https://www.lablist.io/downloads/avenloft-third-party-risk-review.pdf)
+
+### Objective
+
+Assess a fictional technology vendor and its service using the supplied case evidence. Identify third-party cybersecurity risks, document findings, and prepare a reasoned recommendation for the vendor renewal decision.
+
+### Scope
+
+- Understand the vendor relationship and the purpose of the service.
+- Identify information and business processes associated with the vendor.
+- Assess vendor criticality and relevant risk factors.
+- Review the supplied security and assurance evidence.
+- Evaluate the simulated SOC 2 Type II and penetration-testing materials.
+- Identify evidence gaps, control weaknesses, and unresolved questions.
+- Document findings and proposed remediation actions.
+- Assess remaining risks and prepare a vendor renewal recommendation.
+
+### Supporting References
+
+- [NIST Cybersecurity Framework 2.0](https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20), including the GV.SC supply-chain risk management category.
+- [NIST SP 1305 — Cybersecurity Supply Chain Risk Management Quick-Start Guide](https://csrc.nist.gov/pubs/sp/1305/final).
+- [NIST SP 1326 — Cybersecurity Supply Chain Risk Management: Due Diligence Assessment Quick-Start Guide](https://csrc.nist.gov/pubs/sp/1326/final).
+- [NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final).
+
+### Deliverables
+
+1. Vendor Risk Assessment.
+2. Findings and Remediation Tracker.
+3. Vendor Decision Memo.
+
+The assessment will be based on the supplied fictional evidence and documented methodology. It will not be presented as a real assessment of an actual supplier.
+
+**Status: Planned**
+
+---
+
+## Research Archive — Uber 2016 Data Breach
+
+The earlier Uber 2016 data breach work is retained separately from the three main portfolio projects.
+
+[Open Uber 2016 Data Breach GRC Research](research/uber-2016-data-breach-grc-research/README.md)
+
+### Completed Research Documents
+
+- [01 — Case Study](research/uber-2016-data-breach-grc-research/01-case-study/README.md)
+- [02 — Problem Analysis](research/uber-2016-data-breach-grc-research/02-problem-analysis/README.md)
+- [03 — Governance Framework](research/uber-2016-data-breach-grc-research/03-governance-framework/README.md)
+- [04 — Risk Management](research/uber-2016-data-breach-grc-research/04-risk-management/README.md)
+- [05 — Compliance Management](research/uber-2016-data-breach-grc-research/05-compliance-management/README.md)
+
+This research examines publicly documented information about the Uber 2016 data breach and develops independent GRC analysis and recommendations.
+
+The archive also contains folders reserved for possible platform work, spreadsheets, dashboards, diagrams, and a final report. These are placeholders and are not represented as completed implementations.
+
+The research distinguishes documented incident facts from independent analysis and proposed recommendations. No implementation within Uber is claimed.
+
+---
+
+## Working Method
+
+Each main project will use a structured and evidence-based approach:
+
+1. **Understand the case:** Review the supplied scenario and establish the scope.
+2. **Establish criteria:** Select relevant framework guidance and assessment criteria.
+3. **Assess:** Document risks, evidence, gaps, and assumptions.
+4. **Recommend:** Define possible treatments, safeguards, or decisions.
+5. **Report:** Prepare working documents and management-level summaries.
+6. **Review:** Check deliverables for consistency, traceability, and source accuracy.
+
+### Evidence and Transparency
+
+- Case facts will be separated from assumptions and independent analysis.
+- Fictional organisations, vendors, and training evidence will be identified as fictional or simulated.
+- Framework recommendations will not be described as legal obligations unless an applicable legal source supports that conclusion.
+- No access to internal company systems, confidential records, or real vendor evidence is claimed.
+- No real client engagement, deployment, audit, certification, or organisational outcome is claimed.
+- Project status will reflect the actual deliverables available in the repository.
+
+---
+
+## Tools and Documentation
+
+Tools will be selected according to each project's requirements.
+
+| Tool | Intended Use |
 |---|---|
-| Eramba Community Edition | Primary GRC platform for supported risk, compliance, policy and control workflows |
-| Google Sheets | Risk registers, control mapping, assessment workbooks, evidence tracking and supporting analysis |
-| Microsoft Power BI Desktop | Risk, compliance and management dashboards |
-| draw.io (diagrams.net) | GRC architecture, process flows, governance structures and workflow diagrams |
-| GitHub | Version control, project documentation and portfolio publication |
+| Git and GitHub | Version control and portfolio publication |
+| Markdown | Project documentation and assessment reports |
+| Spreadsheet software | Risk registers, assessment workbooks, and remediation tracking |
+| diagrams.net | Process flows, risk workflows, and governance diagrams where needed |
 
-The use of each tool will depend on its actual available features and licensing limitations. Google Sheets will support structured analysis, while Eramba will remain the primary GRC system of record where appropriate.
+Tool configuration, screenshots, and implementation evidence will be added only when the relevant work has been performed.
 
-## Frameworks, Regulations and Standards
+---
 
-The portfolio will study and apply relevant requirements from:
+## Skills and Competencies
 
-- NIST Cybersecurity Framework
-- ISO/IEC 27001
-- NCA Essential Cybersecurity Controls (ECC)
-- Saudi Personal Data Protection Law (PDPL)
-- NIST AI Risk Management Framework (AI RMF)
-- EU Artificial Intelligence Act
+### Cybersecurity Risk Management
+- Risk identification and scenario development.
+- Qualitative likelihood and impact assessment.
+- Risk registers and executive reporting.
+- Risk treatment and remediation tracking.
 
-Additional frameworks will be included only when relevant to the project's scope and supported by appropriate references.
+### AI Governance
+- AI use-case documentation.
+- AI risk identification and assessment.
+- Human oversight and governance safeguards.
+- AI adoption recommendations.
 
-## Skills Demonstrated
+### Third-Party Risk Management
+- Vendor due diligence.
+- Review of security and assurance evidence.
+- Third-party findings and remediation tracking.
+- Vendor risk and renewal recommendations.
 
-**Governance**
-- Governance structures and accountability
-- Policy management
-- Roles and responsibilities
-- Control ownership
+### GRC Documentation
+- Framework-based assessment.
+- Evidence and source traceability.
+- Clear technical and management-level reporting.
+- Documented assumptions and limitations.
 
-**Risk Management**
-- Risk identification and assessment
-- Inherent and residual risk
-- Risk treatment and acceptance
-- Enterprise and third-party risk management
+---
 
-**Compliance**
-- Regulatory research and applicability
-- Requirements and control mapping
-- Evidence management
-- Gap assessment and remediation
+## Portfolio Publication and LinkedIn
 
-**GRC Technology**
-- Eramba platform configuration
-- GRC registers and workflows
-- Google Sheets-based assessment and analysis
-- Power BI dashboards and reporting
+The three main projects will be shared on LinkedIn after their deliverables are completed and reviewed.
 
-**Research and Documentation**
-- Public incident analysis
-- Regulatory interpretation
-- Evidence-based recommendations
-- Technical and executive reporting
+Each project post will focus on:
 
-## Research Interests
+- The business problem and project objective.
+- The methodology and frameworks used.
+- The actual deliverables developed.
+- Relevant screenshots or diagrams.
+- The GitHub repository link.
 
-- AI governance and responsible AI oversight
-- Cybersecurity governance and enterprise risk management
-- Regulatory compliance and control assurance
-- Data governance and data protection
-- Emerging technology risk management
+No incomplete project will be presented as completed work. No fictional case study will be presented as a real client engagement.
 
-Research writing and AI governance projects may be added as separate portfolio work in the future.
+---
 
 ## Repository Structure
 
 ```text
-ai-governance-grc-portfolio/
+Portfolio-Projects/
 │
 ├── README.md
 │
 ├── projects/
-│   ├── 01-integrated-grc-framework/
-│   │   ├── case-study/
-│   │   ├── governance/
-│   │   ├── risk-management/
-│   │   ├── compliance/
-│   │   ├── eramba-implementation/
-│   │   ├── google-sheets/
-│   │   ├── power-bi/
-│   │   └── final-report/
-│   │
-│   ├── 02-saudi-regulatory-compliance/
-│   │   ├── regulatory-sources/
-│   │   ├── applicability/
-│   │   ├── control-mapping/
-│   │   ├── evidence-management/
-│   │   ├── eramba-implementation/
-│   │   ├── google-sheets/
-│   │   ├── power-bi/
-│   │   └── final-report/
-│   │
-│   └── 03-third-party-risk-management/
-│       ├── case-study/
-│       ├── tprm-methodology/
-│       ├── vendor-assessment/
-│       ├── risk-treatment/
-│       ├── eramba-implementation/
-│       ├── google-sheets/
-│       ├── power-bi/
-│       └── final-report/
+│   ├── 01-cybersecurity-risk-register/
+│   ├── 02-ai-use-case-review/
+│   └── 03-third-party-vendor-risk-assessment/
 │
-├── templates/
-│   ├── risk-register/
-│   ├── compliance-register/
-│   ├── evidence-register/
-│   └── assessment-templates/
-│
-└── references/
-    ├── regulations/
-    ├── standards/
-    └── public-case-studies/
+└── research/
+    └── uber-2016-data-breach-grc-research/
+        ├── README.md
+        ├── 01-case-study/
+        ├── 02-problem-analysis/
+        ├── 03-governance-framework/
+        ├── 04-risk-management/
+        ├── 05-compliance-management/
+        ├── 06-eramba-implementation/
+        ├── 07-google-sheets/
+        ├── 08-power-bi/
+        ├── 09-diagrams/
+        └── 10-final-report/
 ```
 
-## Project Status and Transparency
+---
 
-All projects are independent portfolio initiatives. Their status will be updated as work progresses.
+## Project Status
 
-- **Planned:** Scope and methodology defined; implementation has not yet started.
-- **In Progress:** Research, assessment or platform configuration is underway.
-- **Completed:** Deliverables have been developed, reviewed and documented.
+| Status | Meaning |
+|---|---|
+| Planned | Project scope is defined, but its deliverables have not yet been developed. |
+| Completed | Project deliverables have been developed and reviewed. |
 
-Screenshots, configuration evidence, assessment results and reports will be published as the corresponding work is completed. No implementation results or organisational outcomes will be claimed before they are demonstrated.
+A folder or placeholder file does not mean that a project or implementation is completed.
+
+---
+
+## Research Interests
+
+- AI governance and responsible AI.
+- Cybersecurity governance and risk management.
+- Third-party and supply-chain risk.
+- Data governance and data protection.
+- Emerging technology governance.
+
+---
 
 ## Contact
 
-For GRC, cybersecurity governance, AI governance, research and collaboration opportunities, please connect through my LinkedIn profile: www.linkedin.com/in/sarmad-ishtiaq.
+For GRC, cybersecurity governance, AI governance, research, and collaboration:
+
+[LinkedIn — Sarmad Ishtiaq](https://www.linkedin.com/in/sarmad-ishtiaq/)
