@@ -11,7 +11,7 @@
 
 **Writing reference:** ASD-STE100 Issue 9
 
-**Status:** In Progress
+**Status:** completed
 
 ---
 
